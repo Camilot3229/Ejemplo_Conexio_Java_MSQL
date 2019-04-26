@@ -1,0 +1,55 @@
+use inventario;
+--Este codigo espara agrgarlo en xampp despues de crear la BD en xampp
+-- phpMyAdmin SQL Dump
+-- version 4.8.2
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 25-04-2019 a las 19:27:51
+-- Versión del servidor: 10.1.34-MariaDB
+-- Versión de PHP: 7.2.7
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `inventario`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `articulo`
+--
+
+CREATE TABLE `articulo` (
+  `id_arti` varchar(12) NOT NULL,
+  `nom_art` varchar(20) NOT NULL,
+  `precio_art` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `articulo`
+--
+
+INSERT INTO `articulo` (`id_arti`, `nom_art`, `precio_art`) VALUES
+('1', 'aa', 12),
+('1', 'abc', 1580),
+('12', 'mouse', 850),
+('456', 'monitor', 458),
+('777', 'RasPI', 589);
+COMMIT;
+
+select * from articulos;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
